@@ -10,7 +10,9 @@
 }
 
 :root {
-  --prime: yellow;
+  --prime: rgb(255, 255, 100);
+  --background: #121212;
+  --font-gray: rgb(128, 128, 128);
 }
 
 html {
@@ -23,46 +25,57 @@ body {
 }
 
 .navbar {
-  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--background);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--background);
+  color: var(--prime);
+  width: 100%;
+  padding: 20px;
+  align-items: center;
   position: fixed;
-  padding: 30px 120px;
-  background-color: transparent;
-  justify-content: space-between;
-  z-index: 1111;
-  transition: 0, 6s ease;
+  bottom: 0;
+  gap: 1rem;
+  z-index: 2;
+  border-radius: 20px;
+  margin-bottom: 8px;
 }
 
 .logo {
-  font-size: 2.5em;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 2, 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  text-decoration: yellow;
+  text-decoration: none;
+  padding: 10px;
 }
 
-.logo B {
+.logo b {
   color: var(--prime);
 }
 
-ol {
-  display: flex;
-  margin: auto 0;
-}
-
-ol li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-ol li a {
-  font-size: 20px;
-  font-weight: 400;
+.navbar-items > li > a {
+  font-size: 1rem;
+  color: var(--font-gray);
+  font-weight: 200;
+  letter-spacing: 1px;
   text-decoration: none;
-  text-transform: capitalize;
+  transition: 150ms ease-in-out;
 }
 
-ol li:hover a {
+.navbar-items > li > a:hover {
   color: var(--prime);
 }
 
@@ -147,11 +160,13 @@ ol li:hover a {
   letter-spacing: 8px;
   background: var(--prime);
 }
+
 .main {
   width: 100%;
   text-align: center;
   padding: 20px;
 }
+
 .main h2 {
   font-size: 2.5px;
   position: relative;
@@ -159,9 +174,11 @@ ol li:hover a {
   padding-top: 100px;
   display: inline-block;
 }
+
 span {
   color: var(--prime);
 }
+
 .main h2:before {
   position: absolute;
   content: "";
@@ -172,12 +189,14 @@ span {
   bottom: 0;
   border-radius: 50px;
 }
+
 .main h6 {
   margin-top: 10px;
   font-size: 13px;
   font-family: sans-serif;
   font-weight: lighter;
 }
+
 .content {
   position: relative;
   display: flex;
@@ -185,6 +204,7 @@ span {
   padding: 0 30px;
   justify-content: center;
 }
+
 .about.content.cols a {
   /* Existing styles */
   position: relative;
@@ -202,6 +222,7 @@ span {
   background: #123456;
   color: #ffffff;
 }
+
 .about.content.cols.box {
   height: 100%;
   width: 100%;
