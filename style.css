@@ -19,6 +19,7 @@ html {
 
 body {
   background-origin: #121b2b;
+  scroll-behavior: smooth;
 }
 
 .navbar {
