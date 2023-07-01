@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "orbitron", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: gray;
+}
+
+:root {
+  --prime: yellow;
+}
+
+body {
+  background-origin: #121b2b;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0, 6s ease;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: 2, 5px;
+  text-transform: uppercase;
+  text-decoration: yellow;
+}
+
+.logo B {
+  color: var(--prime);
+}
+
+ol {
+  display: flex;
+  margin: auto 0;
+}
+
+ol li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+ol li a {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ol li:hover a {
+  color: var(--prime);
+}
+
+.view {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+}
+
+.home {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(15%);
+}
+
+.highlights {
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+
+.highlights h4 {
+  display: inline;
+  font-size: 1.5vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+}
+
+.highlights h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.highlights b {
+  color: var(--prime);
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.highlights .tagline {
+  color: black;
+  font-size: medium;
+  text-align: center;
+  font-weight: normal;
+}
+
+.highlights .join {
+  position: absolute;
+  left: 50%;
+  transform: translate(50%);
+  font-weight: 800;
+  padding: 8px 20px;
+  font-size: 1vw;
+  margin-top: 6em;
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 40px;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+}
+
+.highlights .join:hover {
+  color: black;
+  cursor: pointer;
+  letter-spacing: 8px;
+  background: var(--prime);
+}
+.main {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.main h2 {
+  font-size: 2.5px;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+}
+span {
+  color: var(--prime);
+}
+.main h2:before {
+  position: absolute;
+  content: "";
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  right: -15%;
+  bottom: 0;
+  border-radius: 50px;
+}
+.main h6 {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+}
+.about.content.cols a {
+  /* Existing styles */
+  position: relative;
+  top: 20px;
+  color: #121b2b;
+  background: var(--prime);
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.about.content.cols a:hover {
+  /* Add hover effect if desired */
+  background: #123456;
+  color: #ffffff;
+}
+.about.content.cols.box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  box-shadow: 0 10px 10px yellow(0 0 0 0);
+}
