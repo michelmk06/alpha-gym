@@ -13,6 +13,10 @@
   --prime: yellow;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-origin: #121b2b;
 }
